@@ -8,7 +8,6 @@ import 'news_state.dart';
 class NewsBloc extends Cubit<NewsState>{
 
   NewsBloc() : super(NewsLoadingState()){
-    emit(NewsLoadingState());
     getArticles();
   }
 

@@ -15,7 +15,6 @@ class AutoNewsModel extends _$AutoNewsModel {
   }
 
   Future<List<NewsArticle>> getTopHeadlines({String? country}) async {
-
     state = const AsyncLoading();
     final repo  = ref.read(newsRepositoryAutoProvider.notifier);
     final result = await repo.fetchTopHeadlines(country ?? "uss");

@@ -1,4 +1,4 @@
-abstract class NewsState{
+class NewsState{
 
 }
 class NewsLoadingState extends NewsState{
